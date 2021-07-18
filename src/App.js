@@ -1,10 +1,10 @@
- 
-import './App.css';
+import Homesccreen from "./component/Homesccreen";
+import "./App.css";
 
 function App() {
   return (
     <div className="app">
-       <h1>netflix clone</h1>
+      <Homesccreen />
     </div>
   );
 }

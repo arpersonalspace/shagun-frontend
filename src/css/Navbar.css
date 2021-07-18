@@ -1,0 +1,29 @@
+.navbar {
+  width: 100%;
+  transition: all 0.2s  ease-in;
+  transition-timing-function: ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  position: fixed;
+  z-index: 33 ;
+}
+
+.navbar__background{
+  background-color: #111;
+}
+.navbar__avtaar,
+.navbar__logo {
+  padding: 0 1rem;
+  object-fit: contain;
+ cursor: pointer;
+}
+.navbar__logo > img {
+  width: 89px;
+  
+}
+.navbar__avtaar > img {
+  width: 40px;
+   
+}
