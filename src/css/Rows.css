@@ -51,6 +51,19 @@ transition: all 0.4s ease-in;
  cursor: pointer;
   transition: all 0.4s ease-in;
 }
+/*loader*/
+
+@keyframes nfLoader-spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes nfLoader-spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
 
 @media (max-width: 780px) {
    

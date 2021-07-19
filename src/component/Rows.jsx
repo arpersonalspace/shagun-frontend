@@ -30,7 +30,7 @@ function Rows({ title, fetchUrl ,isLarge}) {
          }
         </div>
       ) : (
-        <h2>loading</h2>
+        <div id="loader" class="nfLoader"></div>
       )}
     </div>
   );

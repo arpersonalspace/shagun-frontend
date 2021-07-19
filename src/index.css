@@ -9,17 +9,39 @@
   background-color:  #111;
 }
 
-
+.nfLoader {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin: 37px 0 0 -25px;
+  width: 50px;
+  height: 50px;
+}
+.nfLoader:after {
+  content: "";
+  background-image: url(https://assets.nflxext.com/en_us/pages/wiplayer/site-spinner.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  position: absolute;
+  margin: -6px;
+  width: inherit;
+  height: inherit;
+  animation: nfLoader-spin 1.1s linear infinite,1!important;
+  -webkit-animation: nfLoader-spin 1.1s linear infinite,1!important; 
+}
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px rgb(59, 57, 57); 
  
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgb(56, 54, 54); 
-  border-radius: 10px;
+  border-radius: 0px;
 }
 
 /* Handle on hover */
