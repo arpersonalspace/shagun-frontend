@@ -4,6 +4,29 @@
   margin: 0;
   padding: 0;
 }
+::-webkit-scrollbar {
+  width: 10px;
+  background-color:  #111;
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(59, 57, 57); 
+ 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(56, 54, 54); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: grey; 
+ 
+}
 html {
   font-size: 62.5%;
   font-family: 'Poppins', sans-serif;

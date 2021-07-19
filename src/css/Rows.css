@@ -1,46 +1,63 @@
-.row{
-    color: #fff;
-    padding: 0 12px; 
+.row {
+  color: #fff;
+  padding: 0 12px;
 }
-.row  > h1{
-    text-transform: uppercase;
-   
-    padding: 1.2rem;
-    letter-spacing: .1rem;
+.row > h1 {
+  text-transform: uppercase;
+
+  padding: 1.2rem;
+  letter-spacing: 0.1rem;
 }
 
-.row__img{
-    display: flex;
-    width: 100%;
-    overflow-y: hidden;
-    overflow-x: scroll;
+.row__img {
+  display: flex;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+ transition-timing-function: ease-in;
+transition: all 0.4s ease-in;
 }
 
-.row__img::-webkit-scrollbar{
-    display: none;
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-.row__img:hover::-webkit-scrollbar{
-    display: block;
-   
-  
-}
 .row__img > img {
-    object-fit: contain;
-    width: 200px;
-    transition: all .5s    ;
-    margin-right: 15px;
-     
+  object-fit: contain;
+  width: 200px;
+  transition: all 0.5s;
+  margin-right: 15px;
+  margin-bottom: 20px;
 }
 .row__img > img:hover {
-    cursor: pointer;
-    opacity: 1;
-  transform: scale(1.09)  ;
-  
+  cursor: pointer;
+  opacity: 1;
+  transform: scale(1.09);
 }
 
-.poster__large{
+.poster__large {
+  height: 300px;
+}
+.poster__large:hover {
+  scale: (1.09);
+}
+
+.row__img::-webkit-scrollbar {
+  height: 5px;
+  margin-top: 12px;
+  display: none;
+  transition: all 0.4s ease-in;
+}
+.row__img:hover::-webkit-scrollbar {
+  height: 5px;
+  margin-top: 12px;
+  display: block;
+ cursor: pointer;
+  transition: all 0.4s ease-in;
+}
+
+@media (max-width: 780px) {
    
-   
-   height: 300px;
+  .row__img:hover::-webkit-scrollbar {
+    height: 5px;
+    margin-top: 12px;
+    display: none;
+    transition: all 0.4s ease-in;
+  }
 }

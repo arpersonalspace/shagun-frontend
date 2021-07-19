@@ -2,16 +2,14 @@
   color: #fff;
   position: relative;
   object-fit: contain;
-  height:  auto;
+  height: auto;
   background-repeat: no-repeat;
-   
 }
 
 .navbar__childs {
-  padding-left: 20px; 
-  padding-right: 20px;  
-  
-   
+  padding-left: 20px;
+  padding-right: 20px;
+
   padding-top: 22.3rem;
 }
 .banner__title {
@@ -37,9 +35,7 @@
 }
 .banner__description {
   font-size: 1.8rem;
-
   padding-top: 16px;
-
   width: 50%;
 }
 .banner_faded {
