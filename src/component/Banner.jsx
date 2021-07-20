@@ -34,7 +34,7 @@ function Banner() {
     return newString;
   };
   return (
-    !banner?.backdrop_path ?   <div id="loader" class="nfLoader"></div>  : <>
+    !banner?.backdrop_path ?   <div id="loader" className="nfLoader"></div>  : <>
     <div
       className="banner "
       style={{
