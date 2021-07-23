@@ -49,7 +49,7 @@ function Banner() {
       <div className="navbar__childs   ">
         {/**title */}
         <div className="banner__title">
-          <h1> {banner?.name || banner?.original_name}</h1>
+          <h1> {banner?.name || banner?.title || banner?.original_name}</h1>
         </div>
         {/**buttons */}
         <div className="banner__butoons">

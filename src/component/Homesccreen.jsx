@@ -1,13 +1,16 @@
 import React from "react";
 import Navabar from "./Navbar";
 import Rows from "./Rows";
+ 
 import Banner from "./Banner";
 import "../css/homescreen.css";
+ 
 
 import requests from "../axios/requests";
 function Homesccreen() {
   return (
     <div className="homescreen">
+      
       <Navabar />
       <Banner />
 

@@ -1,0 +1,155 @@
+.signin {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.603)),
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/9c5457b8-9ab0-4a04-9fc1-e608d5670f1a/710d74e0-7158-408e-8d9b-23c219dee5df/IN-en-20210719-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: center;
+  width: 100%;
+}
+
+.signin__logo {
+  width: 100%;
+  position: relative;
+}
+.signin__logo > img {
+  width: 15rem;
+  padding-left: 20px;
+}
+
+.signin__form {
+  background-color: rgba(0, 0, 0, 0.719);
+  border-radius: 4px;
+  width: 80%;
+  position: relative;
+  margin: auto;
+  border: 1px solid black;
+  margin-bottom: 6rem;
+}
+
+.form {
+  padding: 22px;
+  display: flex;
+  width: 70%;
+  color: gray;
+  margin: auto;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.form > h4 {
+  font-size: 3.4rem;
+  width: 100%;
+  font-weight: bolder;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.signin_input {
+  background-color: rgb(65, 59, 59);
+  width: 100%;
+  padding: 12px 0;
+
+  border-radius: 4px;
+  margin: 8px 0;
+  position: relative;
+}
+
+.signin_input > input {
+  color: #fff;
+}
+.signin_submit {
+  padding-top: 12px;
+  width: 100%;
+}
+.signin_submit > button {
+  width: 100%;
+  margin: 2rem 0;
+  padding: 12px;
+  background-color: red;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.signin_submit > button:hover {
+  background-color: rgb(184, 10, 10);
+}
+
+.signin_input > input {
+  border: none;
+  outline: none;
+  width: 90%;
+  padding-left: 12px;
+  background-color: transparent;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.signin__extra {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.signin__checkbox {
+  align-items: center;
+  display: flex;
+}
+
+.sign_inFooter {
+  width: 80%;
+  margin: 34px auto;
+}
+
+.loginwithFacebook {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.loginwithFacebook > img {
+  width: 3rem;
+  padding: 2rem;
+}
+
+.guidline1 {
+  font-weight: 100;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  padding: 0 2rem;
+  padding-bottom: 1.2rem;
+}
+.guidline1 > h4 {
+  font-weight: 200;
+}
+.guidline1 > h4 > span {
+  color: #fff;
+}
+.footer__guidlines > p {
+  font-size: 1.2rem;
+  padding: 0 2rem;
+  padding-bottom: 4rem;
+}
+.sign_inFooter {
+  color: gray;
+}
+
+.footer__guidlines > p > a {
+  text-decoration: none;
+  color: rgb(71, 101, 233);
+}
+@media (max-width: 780px) {
+  .signin__form {
+    width: 90%;
+  }
+}

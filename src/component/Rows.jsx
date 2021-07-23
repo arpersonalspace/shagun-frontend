@@ -24,10 +24,11 @@ function Rows({ title, fetchUrl, isLarge }) {
     if (trailerUrl) {
       setTrailerUrl("");
     } else {
-       movieTrailer( movie?.name || movie?.title).then((url) => {
-         const urlLink = new URLSearchParams(new URL(url).search)
+       movieTrailer(movie.title || movie.name || movie.original_name || "").then((url) => {
+        const urlLink = new URLSearchParams(new URL(url).search)
          setTrailerUrl(urlLink.get("v"));
-         console.log(trailerUrl); 
+         console.log(trailerUrl);  
+         console.log(url)
        }).catch(err => console.log(err))
     }  
     console.log(movie)
