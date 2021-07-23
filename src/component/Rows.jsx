@@ -24,15 +24,16 @@ function Rows({ title, fetchUrl, isLarge }) {
     if (trailerUrl) {
       setTrailerUrl("");
     } else {
-       movieTrailer(movie.title || movie.name || movie.original_name || "").then((url) => {
-        const urlLink = new URLSearchParams(new URL(url).search)
-         setTrailerUrl(urlLink.get("v"));
-         console.log(trailerUrl);  
-         console.log(url)
-       }).catch(err => console.log(err))
-    }  
-    console.log(movie)
-   
+      movieTrailer(movie.title || movie.name || movie.original_name || "")
+        .then((url) => {
+          const urlLink = new URLSearchParams(new URL(url).search);
+          setTrailerUrl(urlLink.get("v"));
+          console.log(trailerUrl);
+          console.log(url);
+        })
+        .catch((err) => console.log(err));
+    }
+    console.log(movie);
   };
 
   //youtube url
@@ -49,15 +50,20 @@ function Rows({ title, fetchUrl, isLarge }) {
       {movies.length ? (
         <div className="row__img ">
           {movies.map((data) => (
-            <img
-              onClick={() => handelTrailer(data)}
-              key={data.id}
-              className={isLarge && "poster__large"}
-              src={`https://image.tmdb.org/t/p/original/${
-                isLarge ? data.poster_path : data.backdrop_path
-              }`}
-              alt={data.name}
-            />
+            <div className="row__Container">
+              <img
+              
+                key={data.id}
+                className={isLarge && "poster__large"}
+                src={`https://image.tmdb.org/t/p/original/${
+                  isLarge ? data.poster_path : data.backdrop_path
+                }`}
+                alt={data.name}
+              />
+              <div className="row__containerFooter"   onClick={() => handelTrailer(data)}>
+                <h3>{data.title || data.name}</h3>
+              </div>
+            </div>
           ))}
         </div>
       ) : (

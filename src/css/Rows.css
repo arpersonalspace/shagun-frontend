@@ -14,18 +14,39 @@
   width: 100%;
   overflow-y: hidden;
   overflow-x: scroll;
- transition-timing-function: ease-in;
-transition: all 0.4s ease-in;
+  transition-timing-function: ease-in;
+  transition: all 0.4s ease-in;
 }
 
-.row__img > img {
+.row__Container {
+  transition: all 0.5s;
+  margin: 0 12px;
+  object-fit: contain;
+  position: relative;
+  height: auto;
+}
+
+.row__containerFooter {
+  background-color: rgba(17, 17, 17, 0.685);
+  position: absolute;
+  width: 100%;
+  top: 100;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+}
+
+.row__Container > img {
   object-fit: contain;
   width: 200px;
   transition: all 0.5s;
-  margin-right: 15px;
-  margin-bottom: 20px;
 }
-.row__img > img:hover {
+.row__Container:hover .row__containerFooter {
+  top: 0;
+}
+.row__Container:hover {
   cursor: pointer;
   opacity: 1;
   transform: scale(1.09);
@@ -48,7 +69,7 @@ transition: all 0.4s ease-in;
   height: 5px;
   margin-top: 12px;
   display: block;
- cursor: pointer;
+  cursor: pointer;
   transition: all 0.4s ease-in;
 }
 /*loader*/
@@ -64,9 +85,7 @@ transition: all 0.4s ease-in;
   }
 }
 
-
 @media (max-width: 780px) {
-   
   .row__img:hover::-webkit-scrollbar {
     height: 5px;
     margin-top: 12px;
