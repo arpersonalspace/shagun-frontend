@@ -18,6 +18,7 @@
 .signin__logo > img {
   width: 15rem;
   padding-left: 20px;
+  
 }
 
 .signin__form {
@@ -120,6 +121,7 @@
 .loginwithFacebook > img {
   width: 3rem;
   padding: 2rem;
+  
 }
 
 .guidline1 {
@@ -148,8 +150,54 @@
   text-decoration: none;
   color: rgb(71, 101, 233);
 }
+
+.footer_contact{
+ 
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.774);
+   
+}
+
+.footeer__faq,.footeer__Help,
+.footeer__Terms,.footeer__Privacy{
+ 
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.footer__content{
+  width: 70%;
+  margin: auto;
+  padding: 22px 0 ;
+  font-size: 1.4rem;
+   
+}
+
+.footer__content > p{
+  font-size: 2rem;
+  padding: 22px 0;
+}
+
+.footer_base{
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footeer__faq > span,.footeer__Help >span,
+.footeer__Terms >span,.footeer__Privacy >span{
+ padding: 15px 0;
+ cursor: pointer;
+}
 @media (max-width: 780px) {
   .signin__form {
     width: 90%;
+    background-color: rgba(17, 17, 17, 0.774);
+  }
+  .footer__content{
+    width: 92%;
+   
   }
 }

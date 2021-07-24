@@ -1,10 +1,11 @@
 import React from "react";
 import "../css/SignIn.css";
+
 import { Link } from "react-router-dom";
 function SignIn() {
   return (
     <div className="signin">
-      <Link to="/" className="signin__logo">
+      <Link to="/home" className="signin__logo">
         <img src="/full-logo.png" alt="" />
       </Link>
 
@@ -29,7 +30,7 @@ function SignIn() {
             </div>
             <div className="signin__extra">
               <div className="signin__checkbox">
-                <input type="checkbox" name="" id="" />
+                <input type="checkbox" name="" id="" defaultChecked />
                 Remember Me
               </div>
               Need Help?
@@ -56,6 +57,33 @@ function SignIn() {
                 This page is protected by Google reCAPTCHA to ensure you're not
                 a bot. <a href="https://www.netflix.com">Learn more.</a>
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="footer_contact">
+        <div className="footer__content">
+          <p>
+          Questions? Call 000-800-040-1843
+          </p>
+          <div className="footer_base">
+            <div className="footeer__faq">
+              <span>FAQ</span>
+              <span>Cookie Preferences</span>
+            </div>
+
+            <div className="footeer__Help">
+              <span>Help Centre</span>
+              <span>Corporate Information</span>
+            </div>
+
+            <div className="footeer__Terms">
+              <span>Terms of Use</span>
+            </div>
+
+            <div className="footeer__Privacy">
+              <span>Privacy</span>
             </div>
           </div>
         </div>

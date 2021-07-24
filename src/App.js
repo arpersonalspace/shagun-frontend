@@ -7,8 +7,8 @@ function App() {
     <div className="app">
       <Router>
         <Switch>
-          <Route exact path="/" component={Homesccreen} />
-          <Route exact path="/signIN" component={SignIn}></Route>
+          <Route exact path="/home" component={Homesccreen} />
+          <Route exact path="/" component={SignIn}></Route>
         </Switch>
    
       </Router>
