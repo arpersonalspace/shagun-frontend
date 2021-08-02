@@ -16,6 +16,36 @@
   overflow-x: scroll;
   transition-timing-function: ease-in;
   transition: all 0.4s ease-in;
+
+  position: relative;
+}
+
+.movie_section {
+  width: 100%;
+  
+  overflow: hidden;
+}
+.row__segment {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  transition: all ease-in;
+  position: relative;
+  
+  overflow: hidden;
+}
+
+.row__segment > .MuiSvgIcon-root {
+  transition: all 0.3s ease-in;
+  display: none;
+  font-size: 4rem;
+  z-index: 91;
+  cursor: pointer;
+}
+
+.row__segment:hover > .MuiSvgIcon-root {
+  transition: all 0.5s ease-in;
+  display: block;
 }
 
 .row__Container {
@@ -24,6 +54,8 @@
   object-fit: contain;
   position: relative;
   height: auto;
+   
+   
 }
 
 .row__containerFooter {
@@ -65,6 +97,7 @@
   display: none;
   transition: all 0.4s ease-in;
 }
+/** removing scroll bar css 
 .row__img:hover::-webkit-scrollbar {
   height: 5px;
   margin-top: 12px;
@@ -72,6 +105,8 @@
   cursor: pointer;
   transition: all 0.4s ease-in;
 }
+**/
+
 /*loader*/
 
 @keyframes nfLoader-spin {
@@ -91,5 +126,12 @@
     margin-top: 12px;
     display: none;
     transition: all 0.4s ease-in;
+  }
+  .row__segment > .MuiSvgIcon-root {
+    display: none;
+  }
+  .row__segment:hover > .MuiSvgIcon-root {
+    transition: all 0.5s ease-in;
+    display: none;
   }
 }

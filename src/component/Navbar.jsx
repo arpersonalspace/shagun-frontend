@@ -23,7 +23,7 @@ function Navbar() {
         <img src="full-logo.png" alt="logo-img" />
       </div>
 
-      <Link to="/">
+      <Link to="/signin">
         <div className="navbar__avtaar">
           <img src="netAvtaar.png" alt="netavtaar" />
         </div>
