@@ -51,7 +51,7 @@ function Rows({ title, fetchUrl, isLarge }) {
     //start scroll
     let ScrollContainer = document.getElementById("row__Container");
 
-    if  (action == "increase") {
+    if  (action === "increase") {
       
       console.log(action ,ScrollContainer);
 

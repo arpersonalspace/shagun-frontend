@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function SignIn() {
   return (
     <div className="signin">
-      <Link to="/home" className="signin__logo">
+      <Link to="/" className="signin__logo">
         <img src="/full-logo.png" alt="" />
       </Link>
    
