@@ -8,6 +8,7 @@ import "../css/homescreen.css";
 
 import requests from "../axios/requests";
 function Homesccreen() {
+  console.log(requests)
   return (
     <div className="homescreen">
       

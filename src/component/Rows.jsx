@@ -75,6 +75,7 @@ function Rows({ title, fetchUrl, isLarge }) {
       autoplay: 1,
     },
   };
+  console.log(movies)
   return (
     <div className="row">
       <h1>{title}</h1>
